@@ -8,74 +8,85 @@
         html { scroll-behavior: smooth; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #1a1a1a; color: white; text-align: center; }
         
-        /* Qaybta Sare (Hero Section) oo leh sawir weyn oo maqaayadeed */
+        /* Qaybta Sare (Hero Section) - Sawirka Maqaayada */
         .hero { 
             padding: 150px 20px; 
             background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('unsplash.com') center/cover; 
         }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 15px; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-        .hero p { font-size: 1.4rem; color: #ddd; margin-bottom: 40px; }
+        .hero h1 { font-size: 3.5rem; margin: 0 0 15px 0; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.4rem; color: #ddd; margin: 0 0 40px 0; }
         
         /* Badanka Explore Menu */
         .explore-btn { display: inline-block; padding: 15px 35px; background-color: #ff5722; color: white; text-decoration: none; font-weight: bold; font-size: 1.1rem; border-radius: 30px; transition: 0.3s ease; box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4); }
-        .explore-btn:hover { background-color: #e64a19; transform: translateY(-3px); box-shadow: 0 6px 20px rgba(255, 87, 34, 0.6); }
+        .explore-btn:hover { background-color: #e64a19; transform: translateY(-3px); }
         
         /* Qaybta Menu-ka Cuntada */
         .menu-section { padding: 80px 20px; background-color: #232323; }
-        .menu-section h2 { font-size: 2.5rem; margin-bottom: 10px; color: #ff5722; }
+        .menu-section h2 { font-size: 2.5rem; margin: 0 0 10px 0; color: #ff5722; }
         .menu-title-line { width: 80px; height: 4px; background-color: #ff5722; margin: 0 auto 40px auto; border-radius: 2px; }
         
         /* Sanduuqyada Cuntada (Grid) */
         .menu-grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; }
-        .menu-item { background: #2d2d2d; border-radius: 15px; width: 320px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); text-align: left; overflow: hidden; transition: 0.3s; }
+        .menu-item { background: #2d2d2d; border-radius: 15px; width: 320px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); text-align: left; overflow: hidden; transition: 0.3s; display: flex; flex-direction: column; justify-content: space-between; }
         .menu-item:hover { transform: translateY(-5px); }
         
-        /* Sawirrada Cuntooyinka */
-        .menu-img { width: 100%; height: 220px; object-fit: cover; }
-        .menu-text { padding: 20px; }
-        .menu-item h3 { color: #fff; margin: 0 0 10px 0; font-size: 1.4rem; }
-        .menu-item p { color: #aaa; margin: 0; font-size: 1rem; line-height: 1.5; }
+        /* Sawirrada Cuntooyinka rasmiga ah */
+        .menu-img { width: 100%; height: 220px; object-fit: cover; background-color: #444; }
+        .menu-text { padding: 20px; flex-grow: 1; }
+        .menu-item h3 { color: #fff; margin: 0 0 5px 0; font-size: 1.4rem; }
+        .price { color: #ff5722; font-weight: bold; font-size: 1.2rem; margin: 0 0 10px 0; }
+        .menu-item p { color: #aaa; margin: 0 0 15px 0; font-size: 1rem; line-height: 1.5; }
+        
+        /* Badanka Dalbo WhatsApp */
+        .order-btn { display: block; text-align: center; padding: 12px; background-color: #25d366; color: white; text-decoration: none; font-weight: bold; border-radius: 8px; transition: 0.3s; margin-top: auto; }
+        .order-btn:hover { background-color: #128c7e; }
     </style>
 </head>
 <body>
 
-    <!-- Qaybta Sare ee Soo Dhowaynta -->
+    <!-- Qaybta Sare -->
     <div class="hero">
         <h1>Ku Soo Dhowaw Maqaayada Kilimanjaro!</h1>
         <p>Waxaan kugu qaabilaynaa gacmo furan iyo adeeg heer sare ah berrito.</p>
         <a href="#menu" class="explore-btn">Explore Our Menu 🍽️</a>
     </div>
 
-    <!-- Qaybta Menu-ka Cuntada -->
+    <!-- Qaybta Menu-ka -->
     <div id="menu" class="menu-section">
         <h2>Cuntooyinka Caanka Ah</h2>
         <div class="menu-title-line"></div>
         <div class="menu-grid">
             
-            <!-- Cuntada 1-aad: Sinia Platter -->
+            <!-- 1. Sinia Platter -->
             <div class="menu-item">
                 <img src="unsplash.com" alt="Sinia Platter" class="menu-img">
                 <div class="menu-text">
                     <h3>Sinia Platter 🍛</h3>
+                    <p class="price">Ksh 1,500</p>
                     <p>Bariis kala duwan, baasto saldato, iyo hilib arosto ah oo lagu wada wadaago saxan weyn.</p>
+                    <a href="wa.me" target="_blank" class="order-btn">Dalbo Hadda (WhatsApp) 💬</a>
                 </div>
             </div>
 
-            <!-- Cuntada 2-aad: Savory Chicken Crepes -->
+            <!-- 2. Savory Chicken Crepes -->
             <div class="menu-item">
                 <img src="unsplash.com" alt="Chicken Crepes" class="menu-img">
                 <div class="menu-text">
                     <h3>Savory Chicken Crepes 🥞</h3>
+                    <p class="price">Ksh 850</p>
                     <p>Digaag si gaar ah loo kariyey oo lagu dhex duubay canjeero khafiif ah oo reer galbeed ah.</p>
+                    <a href="wa.me" target="_blank" class="order-btn">Dalbo Hadda (WhatsApp) 💬</a>
                 </div>
             </div>
 
-            <!-- Cuntada 3-aad: Chicken Biryani -->
+            <!-- 3. Chicken Biryani -->
             <div class="menu-item">
                 <img src="unsplash.com" alt="Chicken Biryani" class="menu-img">
                 <div class="menu-text">
                     <h3>Chicken Biryani 🍗</h3>
+                    <p class="price">Ksh 950</p>
                     <p>Bariis basmati ah oo basbaas iyo dhir udgoon leh, kaas oo la socda digaag suugo macaan leh.</p>
+                    <a href="wa.me" target="_blank" class="order-btn">Dalbo Hadda (WhatsApp) 💬</a>
                 </div>
             </div>
 
