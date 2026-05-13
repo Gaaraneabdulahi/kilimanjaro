@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilimanjaro Food Court RESTAURANT</title>
+    <style>
+        /* Ka dhig bogga mid si tartiib ah u dega marka la gujiyo badanka */
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #1a1a1a; color: white; text-align: center; }
+        
+        /* Qaybta Sare (Hero Section) */
+        .hero { padding: 130px 20px; background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('unsplash.com') center/cover; }
+        .hero h1 { font-size: 3rem; margin-bottom: 15px; color: #fff; }
+        .hero p { font-size: 1.3rem; color: #ddd; margin-bottom: 40px; }
+        
+        /* Badanka Explore Menu */
+        .explore-btn { display: inline-block; padding: 15px 35px; background-color: #ff5722; color: white; text-decoration: none; font-weight: bold; font-size: 1.1rem; border-radius: 30px; transition: 0.3s ease; box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4); }
+        .explore-btn:hover { background-color: #e64a19; transform: translateY(-3px); box-shadow: 0 6px 20px rgba(255, 87, 34, 0.6); }
+        
+        /* Qaybta Menu-ka */
+        .menu-section { padding: 80px 20px; background-color: #232323; }
+        .menu-section h2 { font-size: 2.5rem; margin-bottom: 10px; color: #ff5722; }
+        .menu-title-line { width: 80px; height: 4px; background-color: #ff5722; margin: 0 auto 40px auto; border-radius: 2px; }
+        .menu-grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; }
+        .menu-item { background: #2d2d2d; padding: 25px; border-radius: 15px; width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-align: left; border-left: 5px solid #ff5722; transition: 0.3s; }
+        .menu-item:hover { transform: translateY(-5px); }
+        .menu-item h3 { color: #fff; margin: 0 0 10px 0; font-size: 1.4rem; }
+        .menu-item p { color: #aaa; margin: 0; font-size: 1rem; line-height: 1.5; }
+    </style>
+</head>
+<body>
+
+    <!-- Qaybta Sare ee Soo Dhowaynta -->
+    <div class="hero">
+        <h1>Ku Soo Dhowaw Maqaayada Kilimanjaro!</h1>
+        <p>Waxaan kugu qaabilaynaa gacmo furan iyo adeeg heer sare ah berrito.</p>
+        <!-- Badanka Explore Our Menu oo ku xiran #menu -->
+        <a href="#menu" class="explore-btn">Explore Our Menu 🍽️</a>
+    </div>
+
+    <!-- Qaybta Menu-ka Cuntada -->
+    <div id="menu" class="menu-section">
+        <h2>Cuntooyinka Caanka Ah</h2>
+        <div class="menu-title-line"></div>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>Sinia Platter 🍛</h3>
+                <p>Bariis kala duwan, baasto saldato, iyo hilib arosto ah oo lagu wada wadaago saxan weyn.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Savory Chicken Crepes 🥞</h3>
+                <p>Digaag si gaar ah loo kariyey oo lagu dhex duubay canjeero khafiif ah oo reer galbeed ah.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Chicken Biryani 🍗</h3>
+                <p>Bariis basmati ah oo basbaas iyo dhir udgoon leh, kaas oo la socda digaag suugo macaan leh.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
